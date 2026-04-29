@@ -1,0 +1,240 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #f5f0e8;
+  font-family: 'Lato', sans-serif;
+  color: #3a2a1a;
+}
+
+.hero {
+  background: #b37e4a;
+  padding: 2.5rem 1.5rem 2rem;
+  text-align: center;
+}
+.hero-tag {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #f5f0e8;;
+  font-weight: 300;
+  margin-bottom: 0.6rem;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  color: #f5f0e8;
+  line-height: 1.1;
+}
+.hero h1 em {
+  font-style: italic;
+  color: #f5f0e8;
+}
+.hero-sub {
+  font-size: 12px;
+  color: #f5f0e8;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 2rem 1.5rem 1.25rem;
+}
+.section-head .line {
+  flex: 1;
+  height: 1px;
+  background: #d4c4a8;
+}
+.section-head span {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  color: #5c3d1e;
+  white-space: nowrap;
+}
+
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+  gap: 12px;
+  margin: 0 1.5rem;
+
+
+}
+
+
+.img-grid.centered {
+  grid-template-columns: repeat(3, minmax(180px, 280px));
+  justify-content: center;
+}
+
+
+
+
+.img-card {
+  background: #ede8df;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #d4c4a8;
+}
+.img-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  background: #e0d8cc;
+}
+.img-card-body {
+  padding: 0.75rem 0.9rem 0.9rem;
+}
+.img-card-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.95rem;
+  color: #3a2a1a;
+  margin-bottom: 3px;
+}
+.img-card-desc {
+  font-size: 11px;
+  color: #8a6a4a;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.img-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.img-card-price {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: #5c3d1e;
+  font-weight: 600;
+}
+
+.tag {
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+.tag-hot     { background: #f5e4d0; color: #7a3b10; }
+.tag-iced    { background: #d8ecf5; color: #1a5478; }
+.tag-new     { background: #dff0d8; color: #2e6b1a; }
+.tag-popular { background: #f5ead0; color: #7a5000; }
+.tag-vegan   { background: #ede0f5; color: #5c35a0; }
+
+.list-section {
+  margin: 0 1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #d4c4a8;
+}
+.list-item {
+  background: #ede8df;
+  padding: 0.9rem 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  border-bottom: 1px solid #d4c4a8;
+}
+.list-item:last-child { border-bottom: none; }
+.list-item:nth-child(even) { background: #e8e2d8; }
+.list-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.9rem;
+  color: #3a2a1a;
+  margin-bottom: 2px;
+}
+.list-desc {
+  font-size: 11px;
+  color: #8a6a4a;
+  font-weight: 300;
+}
+.list-price {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.9rem;
+  color: #5c3d1e;
+  white-space: nowrap;
+}
+
+.special-bar {
+  background: #3a2a1a;
+  margin: 2rem 1.5rem 0;
+  border-radius: 12px;
+  padding: 1.1rem 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.special-bar h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: #c9a96e;
+  margin-bottom: 2px;
+}
+.special-bar p {
+  font-size: 11px;
+  color: #9b7a5a;
+  font-weight: 300;
+}
+.special-price {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: #f5f0e8;
+}
+
+.footer-note {
+  text-align: center;
+  font-size: 11px;
+  color: #9b7a5a;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-top: 2rem;
+  padding: 0 1.5rem 2rem;
+  line-height: 1.9;
+}
+
+
+
+
+
+/* added css */
+/* === Animations === */
+
+/* Fade up base state */
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero entrance */
+.hero {
+  opacity: 0;
+  transform: translateY(-16px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.hero.hero-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth card hover transition */
+.img-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.img-card:hover {
+  box-shadow: 0 8px 24px rgba(58, 42, 26, 0.15);
+}
