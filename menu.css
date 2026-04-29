@@ -238,3 +238,27 @@ body {
 .img-card:hover {
   box-shadow: 0 8px 24px rgba(58, 42, 26, 0.15);
 }
+
+
+
+
+/* added css */
+
+.img-grid.centered {
+  grid-template-columns: repeat(3, minmax(180px, 280px));
+  justify-content: center;
+}
+
+/* Tablet */
+@media (max-width: 600px) {
+  .img-grid.centered {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 400px) {
+  .img-grid.centered {
+    grid-template-columns: 1fr;
+  }
+}
